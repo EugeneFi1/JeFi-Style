@@ -1,0 +1,19 @@
+{
+  "name": "jefi-style",
+  "version": "0.0.3",
+  "description": "JeFi Angular Styles Library",
+  "author": {
+    "name": "EugeneFi1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EugeneFi1/JeFi-Style"
+  },
+  "peerDependencies": {
+    "@angular/common": "^11.0.9",
+    "@angular/core": "^11.0.9"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

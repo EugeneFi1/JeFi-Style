@@ -1,0 +1,9 @@
+<div class="form-input">
+  <input  class="retro-input"
+          [class.error]="inValid"
+          type="text"
+          [placeholder]="placeholder" class="retro-input">
+  <div *ngIf="inValid" class="error-container">
+    <span class="error-message">{{errorMessage}}</span>
+  </div>
+</div>

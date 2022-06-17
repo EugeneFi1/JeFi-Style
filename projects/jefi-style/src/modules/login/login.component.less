@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700&display=swap");
+
+.container {
+  padding: 50px 50px 0;
+}
+
+.retro-button-filled {
+  padding: 5px 15px;
+  margin: 15px;
+  outline: none;
+  border: 3px solid white;
+  box-shadow: 0px 0px 0px 1px rgb(90, 90, 90),
+    inset 0px 0px 0px 1px rgb(90, 90, 90),
+    0px 2px 0px 2px rgb(100, 100, 100);
+  text-shadow: 0px -1px rgb(90, 90, 90),
+    -1px 0px rgb(90, 90, 90);
+  border-radius: 0.3em;
+  color: white;
+  background-color: rgb(90, 90, 90);
+/*   background-image: repeating-linear-gradient(
+    -45deg,
+    rgb(100, 100, 100),
+    rgb(100, 100, 100) 6px,
+    rgb(90, 90, 90) 6px,
+    rgb(90, 90, 90) 12px); */
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  cursor: pointer;
+}
+.retro-button-filled:active {
+  background-color: rgb(75, 75, 75);
+/*   background-image: repeating-linear-gradient(
+    -45deg,
+    rgb(85, 85, 85),
+    rgb(85, 85, 85) 6px,
+    rgb(75, 75, 75) 6px,
+    rgb(75, 75, 75) 12px); */
+  box-shadow: 0px 0px 0px 1px rgb(90, 90, 90),
+    inset 0px 0px 0px 1px rgb(90, 90, 90),
+    0px 1px 0px 2px rgb(100, 100, 100);
+}
+
+.green {
+  background-color: rgb(75, 135, 71);
+  box-shadow: 0px 0px 0px 1px rgb(75, 135, 71),
+              inset 0px 0px 0px 1px rgb(75, 135, 71),
+              0px 2px 0px 2px rgb(85, 134, 82);
+}
+.green:active {
+  background-color: rgb(54, 138, 48);
+  box-shadow: 0px 0px 0px 1px rgb(54, 138, 48),
+              inset 0px 0px 0px 1px rgb(54, 138, 48),
+              0px 1px 0px 2px rgb(64, 137, 60);
+}
+
+.red {
+  background-color: rgb(196, 58, 58);
+  box-shadow: 0px 0px 0px 1px rgb(196, 58, 58),
+    inset 0px 0px 0px 1px rgb(196, 58, 58),
+    0px 2px 0px 2px rgb(173, 81, 81);
+}
+.red:active {
+  background-color: rgb(219, 35, 35);
+  box-shadow: 0px 0px 0px 1px rgb(219, 35, 35),
+    inset 0px 0px 0px 1px rgb(219, 35, 35),
+    0px 1px 0px 2px rgb(196, 58, 58);
+}
+
+.form-input {
+  display:flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 15px;
+}
+
+.retro-input {
+  outline: none;
+  margin: 15px;
+  padding: 7px 0 7px 14px;
+  border: 3px solid rgb(150, 150, 150);
+  box-shadow: 0px 0px 0px 1px rgb(90, 90, 90),
+    inset 0px 0px 0px 1px rgb(90, 90, 90),
+    1px 2px 0px 2px rgb(100, 100, 100);
+  border-radius: 0.3em;
+  color: rgb(50, 50, 50);
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.retro-input:focus {
+  box-shadow: 0px 0px 0px 1px rgb(90, 90, 90),
+    inset 0px 0px 0px 1px rgb(90, 90, 90),
+    1px 2px 0px 1px rgb(100, 100, 100);
+}
+
+.retro-checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 15px 15px 30px;
+}
+.retro-checkbox:checked ~ .retro-checkbox-box {
+  background-color: rgb(75, 135, 71);
+  border: 1px solid rgb(75, 135, 71);
+  box-shadow: 0px 1px 0px 0px rgb(85, 134, 82);
+}
+.retro-checkbox:checked ~ .retro-checkbox-box:after {
+  display: block;
+}
+.retro-checkbox {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.retro-checkbox-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(90, 90, 90);
+  box-shadow: 0px 1px 0px 1px rgb(100, 100, 100);
+  background-color: white;
+}
+.retro-checkbox-box::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.retro-checkbox-label {
+  padding-left: 12px;
+  cursor: pointer;
+  font-size: 1.5em;
+  user-select: none;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.error {
+  margin: 0 0 15px;
+  border: 3px solid rgb(196, 58, 58);
+  box-shadow: 1px 2px 0px 2px rgb(196, 58, 58);
+  color: rgb(196, 58, 58);
+}
+.error:focus {
+  box-shadow: 1px 2px 0px 1px rgb(196, 58, 58);
+}
+
+.error-container {
+  position: relative;
+  padding: 10px;
+  background-color: rgb(196, 58, 58);
+  border-radius: .3em;
+}
+.error-container::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent rgb(196, 58, 58) transparent;
+}
+
+.error-message {
+  padding-left: 8px;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: white;
+}
+
+.retro-div {
+  width: 150px;
+  height: 150px;
+
+  border: 3px solid rgb(70, 70, 70);
+  box-shadow:
+    3px 3px 0px 3px rgb(100, 100, 100);
+  border-radius: .5em;
+}
+
+.retro-alert {
+  width: 500px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgb(196, 58, 58);
+/*   background-color: rgb(196, 58, 58); */
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgb(196, 58, 58),
+    rgb(196, 58, 58) 6px,
+    white 6px,
+    white 12px);
+  border-radius: .5em;
+}
+.retro-alert-text {
+  padding: 3px;
+  border: 3px solid rgb(196, 58, 58);
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 1.3em;
+  color: black;
+  background-color: white;
+}
