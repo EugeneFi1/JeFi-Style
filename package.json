@@ -2,7 +2,7 @@
   "name": "jefi-style",
   "version": "0.0.0",
   "scripts": {
-    "heroku-postbuild": "ng build",
+    "heroku-postbuild": "ng build guide",
     "ng": "ng",
     "start": "node server.js",
     "start-guide": "cd projects/guide && ng serve --open",
