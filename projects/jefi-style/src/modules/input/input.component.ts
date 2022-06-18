@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import {Component, EventEmitter, Input, Output} from "@angular/core";
 
 @Component({
   selector: "jf-input",
@@ -6,7 +6,15 @@ import { Component, Input } from "@angular/core";
   styleUrls: ["./input.component.less"],
 })
 export class JefiInputComponent {
-  @Input() inValid: boolean = false;
-  @Input() placeholder: string = '';
-  @Input() errorMessage: string | undefined;
+  @Input() public value: string | undefined;
+  @Output() public valueChange = new EventEmitter<string>();
+  @Input() public type: "text" | "password" = "text";
+
+  @Input() public inValid: boolean = false;
+  @Input() public placeholder: string = '';
+  @Input() public errorMessage: string | undefined;
+
+  public change(value: string) {
+    this.valueChange.emit(value);
+  }
 }

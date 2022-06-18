@@ -1,9 +1,11 @@
-<div class="form-input">
-  <input class="retro-input"
+<div class="jefi-input-container">
+  <input [type]="type"
+         [ngModel]="value"
          [class.error]="inValid"
-         type="text"
-         [placeholder]="placeholder" class="retro-input">
-  <div *ngIf="inValid" class="error-container">
-    <span class="error-message">{{errorMessage}}</span>
+         [placeholder]="placeholder"
+         (ngModelChange)="change($event)"
+  />
+  <div *ngIf="errorMessage">
+    <span>{{errorMessage}}</span>
   </div>
 </div>
