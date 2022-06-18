@@ -1,3 +1,22 @@
-.jefi-input-container {
+@import "../../assets/vars";
+@import "../../assets/fonts";
 
+.jefi-field-container {
+  &__input{
+    height: var(--jefi-input-height, @field-height);
+    background-color: var(--jefi-input-background-color, @field-background-color);
+    border: 1.5px solid #dadada;
+    border-radius: 5px;
+
+    &:focus {
+      outline:none;
+      border-color: #87caee;
+      box-shadow: 0 0 5px #9ecaed;
+    }
+
+    &.error {
+      border-color: #ff0000;
+      box-shadow: 0 0 5px #b90101;
+    }
+  }
 }

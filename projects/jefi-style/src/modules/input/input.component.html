@@ -1,8 +1,11 @@
-<div class="jefi-input-container">
-  <input [type]="type"
+<div class="jefi-field-container">
+  <input class="jefi-field-container__input"
+         [type]="type"
          [ngModel]="value"
-         [class.error]="inValid"
-         [placeholder]="placeholder"
+         [ngClass]="{
+            error: inValid
+         }"
+         [placeholder]="label"
          (ngModelChange)="change($event)"
   />
   <div *ngIf="errorMessage">

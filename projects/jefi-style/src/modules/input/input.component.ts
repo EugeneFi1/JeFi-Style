@@ -11,7 +11,7 @@ export class JefiInputComponent {
   @Input() public type: "text" | "password" = "text";
 
   @Input() public inValid: boolean = false;
-  @Input() public placeholder: string = '';
+  @Input() public label: string = 'Label';
   @Input() public errorMessage: string | undefined;
 
   public change(value: string) {
