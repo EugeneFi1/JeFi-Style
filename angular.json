@@ -28,18 +28,6 @@
             "tsConfig": "projects/jefi-style/tsconfig.spec.json",
             "karmaConfig": "projects/jefi-style/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/jefi-style/tsconfig.lib.json",
-              "projects/jefi-style/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     },
@@ -140,19 +128,6 @@
               "projects/guide/src/styles.less"
             ],
             "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/guide/tsconfig.app.json",
-              "projects/guide/tsconfig.spec.json",
-              "projects/guide/e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         },
         "e2e": {
